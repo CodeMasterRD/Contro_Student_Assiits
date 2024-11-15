@@ -29,19 +29,19 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
 
         jBorderGUI1 = new GUI.JBorderGUI();
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        txtInputMatricula = new javax.swing.JTextField();
+        btn1 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
         btnEntrar = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn0 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -51,39 +51,54 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(44, 44, 44));
 
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField1.setBorder(null);
+        txtInputMatricula.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        txtInputMatricula.setBorder(null);
 
-        jButton1.setBackground(new java.awt.Color(0, 117, 250));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("1");
-        jButton1.setBorder(null);
-        jButton1.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton2.setBackground(new java.awt.Color(0, 117, 250));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("4");
-        jButton2.setBorder(null);
-        jButton2.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton3.setBackground(new java.awt.Color(0, 117, 250));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("2");
-        jButton3.setBorder(null);
-        jButton3.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton4.setBackground(new java.awt.Color(0, 117, 250));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("9");
-        jButton4.setBorder(null);
-        jButton4.setPreferredSize(new java.awt.Dimension(90, 47));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setBackground(new java.awt.Color(0, 117, 250));
+        btn1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn1.setForeground(new java.awt.Color(255, 255, 255));
+        btn1.setText("1");
+        btn1.setBorder(null);
+        btn1.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn1ActionPerformed(evt);
+            }
+        });
+
+        btn4.setBackground(new java.awt.Color(0, 117, 250));
+        btn4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn4.setForeground(new java.awt.Color(255, 255, 255));
+        btn4.setText("4");
+        btn4.setBorder(null);
+        btn4.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
+
+        btn2.setBackground(new java.awt.Color(0, 117, 250));
+        btn2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn2.setForeground(new java.awt.Color(255, 255, 255));
+        btn2.setText("2");
+        btn2.setBorder(null);
+        btn2.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
+
+        btn9.setBackground(new java.awt.Color(0, 117, 250));
+        btn9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn9.setForeground(new java.awt.Color(255, 255, 255));
+        btn9.setText("9");
+        btn9.setBorder(null);
+        btn9.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
             }
         });
 
@@ -93,60 +108,95 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         btnEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/images/Arrow right.png"))); // NOI18N
         btnEntrar.setBorder(null);
         btnEntrar.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton6.setBackground(new java.awt.Color(250, 76, 76));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/images/Delete.png"))); // NOI18N
-        jButton6.setBorder(null);
-        jButton6.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton7.setBackground(new java.awt.Color(0, 117, 250));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("8");
-        jButton7.setBorder(null);
-        jButton7.setPreferredSize(new java.awt.Dimension(90, 47));
-
-        jButton8.setBackground(new java.awt.Color(0, 117, 250));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("6");
-        jButton8.setBorder(null);
-        jButton8.setPreferredSize(new java.awt.Dimension(90, 47));
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnEntrarActionPerformed(evt);
             }
         });
 
-        jButton9.setBackground(new java.awt.Color(0, 117, 250));
-        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("7");
-        jButton9.setBorder(null);
-        jButton9.setPreferredSize(new java.awt.Dimension(90, 47));
+        btnEliminar.setBackground(new java.awt.Color(250, 76, 76));
+        btnEliminar.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/images/Delete.png"))); // NOI18N
+        btnEliminar.setBorder(null);
+        btnEliminar.setPreferredSize(new java.awt.Dimension(90, 47));
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
 
-        jButton10.setBackground(new java.awt.Color(0, 117, 250));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("3");
-        jButton10.setBorder(null);
-        jButton10.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn8.setBackground(new java.awt.Color(0, 117, 250));
+        btn8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn8.setForeground(new java.awt.Color(255, 255, 255));
+        btn8.setText("8");
+        btn8.setBorder(null);
+        btn8.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
 
-        jButton11.setBackground(new java.awt.Color(0, 117, 250));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("5");
-        jButton11.setBorder(null);
-        jButton11.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn6.setBackground(new java.awt.Color(0, 117, 250));
+        btn6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn6.setForeground(new java.awt.Color(255, 255, 255));
+        btn6.setText("6");
+        btn6.setBorder(null);
+        btn6.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
 
-        jButton12.setBackground(new java.awt.Color(0, 117, 250));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("0");
-        jButton12.setBorder(null);
-        jButton12.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn7.setBackground(new java.awt.Color(0, 117, 250));
+        btn7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn7.setForeground(new java.awt.Color(255, 255, 255));
+        btn7.setText("7");
+        btn7.setBorder(null);
+        btn7.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
+
+        btn3.setBackground(new java.awt.Color(0, 117, 250));
+        btn3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn3.setForeground(new java.awt.Color(255, 255, 255));
+        btn3.setText("3");
+        btn3.setBorder(null);
+        btn3.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
+
+        btn5.setBackground(new java.awt.Color(0, 117, 250));
+        btn5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn5.setForeground(new java.awt.Color(255, 255, 255));
+        btn5.setText("5");
+        btn5.setBorder(null);
+        btn5.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
+
+        btn0.setBackground(new java.awt.Color(0, 117, 250));
+        btn0.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn0.setForeground(new java.awt.Color(255, 255, 255));
+        btn0.setText("0");
+        btn0.setBorder(null);
+        btn0.setPreferredSize(new java.awt.Dimension(90, 47));
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -157,61 +207,61 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInputMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(12, 12, 12)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                            .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGap(263, 263, 263)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(244, 244, 244))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(143, 143, 143)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtInputMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(95, Short.MAX_VALUE))
         );
@@ -241,34 +291,141 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        BtnsHome.btnEntrar();
+        dispose();
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+        
+        
+            if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn1();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt);
+                }
+           
+          
+    }//GEN-LAST:event_btn1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+            // TODO add your handling code here:
+            
+             if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = String.valueOf(BtnsHome.btn2());
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+                   
+                
+        
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+       if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn3();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+        if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn4();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+        if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn5();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+        if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn6();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+        if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn7();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+        if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn8();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+         if (!(txtInputMatricula.getText().length() >= 8)) {
+                    String txtBtn = BtnsHome.btn9();
+                    String txt = txtInputMatricula.getText() + txtBtn; 
+                    txtInputMatricula.setText(txt); 
+                }
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        // TODO add your handling code here:
+        String txt = txtInputMatricula.getText();
+        
+        if (!txt.isEmpty()) {
+            txtInputMatricula.setText(txt.substring(0, txt.length() - 1));
+            
+        }     
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        // TODO add your handling code here:
+        if (txtInputMatricula.getText().length() >= 8) {
+            
+        }else{
+            String txtBtn = BtnsHome.btn0();
+            String txt = txtInputMatricula.getText() + txtBtn; 
+            txtInputMatricula.setText(txt);
+        }
+        
+    }//GEN-LAST:event_btn0ActionPerformed
+    
+    
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn0;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnEntrar;
     private GUI.JBorderGUI jBorderGUI1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtInputMatricula;
     // End of variables declaration//GEN-END:variables
 }

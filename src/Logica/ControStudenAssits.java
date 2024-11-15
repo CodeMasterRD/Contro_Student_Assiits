@@ -17,8 +17,8 @@ public class ControStudenAssits {
         pantallaHome.setVisible(true);
         pantallaHome.setLocationRelativeTo(null);
    
-        DBConexion conexion = new DBConexion();
-        conexion.getConexion();
+//        DBConexion conexion = new DBConexion();
+//        conexion.getConexion();
     }
     
 }
