@@ -5,7 +5,13 @@
 package GUI;
 
 import Logica.BtnsHome;
+import Logica.ValidarMatricula;
 import java.awt.Color;
+import java.io.FileNotFoundException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -27,6 +33,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialog1 = new javax.swing.JDialog();
         jBorderGUI1 = new GUI.JBorderGUI();
         jPanel1 = new javax.swing.JPanel();
         txtInputMatricula = new javax.swing.JTextField();
@@ -42,6 +49,17 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         btn3 = new javax.swing.JButton();
         btn5 = new javax.swing.JButton();
         btn0 = new javax.swing.JButton();
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -236,7 +254,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(244, 244, 244))))
+                        .addGap(92, 92, 92))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -293,8 +311,35 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-        BtnsHome.btnEntrar();
-        dispose();
+        String txt = txtInputMatricula.getText();
+        
+        
+        
+        try{
+            int mat = Integer.parseInt(txt);
+            boolean validar = ValidarMatricula.validar(mat);
+            
+            if (validar) {
+                BtnsHome.btnEntrar();
+                dispose();
+            }else{
+                JOptionPane.showConfirmDialog(this, "La matrícula no es válida. Inténtalo de nuevo.", "Error", JOptionPane.ERROR_MESSAGE);
+                txtInputMatricula.requestFocus();
+            }
+        
+        
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Por favor, Ingrese su matricula", "Entrada Inválida", JOptionPane.WARNING_MESSAGE);
+        
+        } catch (FileNotFoundException | SQLException ex) {
+            Logger.getLogger(HomeStudentsGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -302,9 +347,9 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         
         
             if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn1();
-                    String txt = txtInputMatricula.getText() + txtBtn; 
-                    txtInputMatricula.setText(txt);
+                    
+                    String txt = txtInputMatricula.getText(); 
+                    txtInputMatricula.setText(txt + "1");
                 }
            
           
@@ -314,9 +359,9 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
             // TODO add your handling code here:
             
              if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = String.valueOf(BtnsHome.btn2());
-                    String txt = txtInputMatricula.getText() + txtBtn; 
-                    txtInputMatricula.setText(txt); 
+                    
+                    String txt = txtInputMatricula.getText(); 
+                    txtInputMatricula.setText(txt + "2"); 
                 }
                    
                 
@@ -326,7 +371,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
        if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn3();
+                    String txtBtn = "3";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -335,7 +380,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
         // TODO add your handling code here:
         if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn4();
+                    String txtBtn = "4";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -344,7 +389,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         // TODO add your handling code here:
         if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn5();
+                    String txtBtn = "5";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -353,7 +398,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         // TODO add your handling code here:
         if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn6();
+                    String txtBtn = "6";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -362,7 +407,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         // TODO add your handling code here:
         if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn7();
+                    String txtBtn = "7";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -371,7 +416,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         // TODO add your handling code here:
         if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn8();
+                    String txtBtn = "8";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -380,7 +425,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         // TODO add your handling code here:
          if (!(txtInputMatricula.getText().length() >= 8)) {
-                    String txtBtn = BtnsHome.btn9();
+                    String txtBtn = "9";
                     String txt = txtInputMatricula.getText() + txtBtn; 
                     txtInputMatricula.setText(txt); 
                 }
@@ -401,7 +446,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         if (txtInputMatricula.getText().length() >= 8) {
             
         }else{
-            String txtBtn = BtnsHome.btn0();
+            String txtBtn = "0";
             String txt = txtInputMatricula.getText() + txtBtn; 
             txtInputMatricula.setText(txt);
         }
@@ -425,6 +470,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnEntrar;
     private GUI.JBorderGUI jBorderGUI1;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtInputMatricula;
     // End of variables declaration//GEN-END:variables
