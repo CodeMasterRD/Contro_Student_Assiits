@@ -22,7 +22,7 @@ public class CerrarJF {
     public void cerrarJFrame() {
         if (frame != null) {
             frame.dispose(); // Cierra la ventana
-            System.out.println("JFrame cerrado desde otra clase.");
+            System.out.println("JFrame cerrado desde otra clase test.");
         }
     }
 }
