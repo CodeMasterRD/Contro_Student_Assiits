@@ -4,8 +4,9 @@
  */
 package GUI;
 
-import Logica.BtnsHome;
-import Logica.ValidarMatricula;
+
+import Logica.Validaciones;
+
 import java.awt.Color;
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
@@ -19,10 +20,29 @@ import javax.swing.JOptionPane;
  */
 public class HomeStudentsGUI extends javax.swing.JFrame {
 
+    
+    public static int matricula;
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    
+    
+    public HomeStudentsGUI(int matricula) {
+        this.matricula = matricula;
+    }
+    
+    public static int getMatricula() {
+        return matricula;
+    }
+
     public HomeStudentsGUI() {
         initComponents();
         setBackground(new Color(0,0,0,0));
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -69,11 +89,11 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(44, 44, 44));
 
-        txtInputMatricula.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        txtInputMatricula.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         txtInputMatricula.setBorder(null);
 
         btn1.setBackground(new java.awt.Color(0, 117, 250));
-        btn1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn1.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("1");
         btn1.setBorder(null);
@@ -85,7 +105,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn4.setBackground(new java.awt.Color(0, 117, 250));
-        btn4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn4.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn4.setForeground(new java.awt.Color(255, 255, 255));
         btn4.setText("4");
         btn4.setBorder(null);
@@ -97,7 +117,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn2.setBackground(new java.awt.Color(0, 117, 250));
-        btn2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn2.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         btn2.setForeground(new java.awt.Color(255, 255, 255));
         btn2.setText("2");
         btn2.setBorder(null);
@@ -109,7 +129,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn9.setBackground(new java.awt.Color(0, 117, 250));
-        btn9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn9.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn9.setForeground(new java.awt.Color(255, 255, 255));
         btn9.setText("9");
         btn9.setBorder(null);
@@ -145,7 +165,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn8.setBackground(new java.awt.Color(0, 117, 250));
-        btn8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn8.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn8.setForeground(new java.awt.Color(255, 255, 255));
         btn8.setText("8");
         btn8.setBorder(null);
@@ -157,7 +177,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn6.setBackground(new java.awt.Color(0, 117, 250));
-        btn6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn6.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn6.setForeground(new java.awt.Color(255, 255, 255));
         btn6.setText("6");
         btn6.setBorder(null);
@@ -169,7 +189,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn7.setBackground(new java.awt.Color(0, 117, 250));
-        btn7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn7.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn7.setForeground(new java.awt.Color(255, 255, 255));
         btn7.setText("7");
         btn7.setBorder(null);
@@ -181,7 +201,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn3.setBackground(new java.awt.Color(0, 117, 250));
-        btn3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn3.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn3.setForeground(new java.awt.Color(255, 255, 255));
         btn3.setText("3");
         btn3.setBorder(null);
@@ -193,7 +213,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn5.setBackground(new java.awt.Color(0, 117, 250));
-        btn5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn5.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn5.setForeground(new java.awt.Color(255, 255, 255));
         btn5.setText("5");
         btn5.setBorder(null);
@@ -205,7 +225,7 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         });
 
         btn0.setBackground(new java.awt.Color(0, 117, 250));
-        btn0.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btn0.setFont(new java.awt.Font("Roboto Black", 0, 16)); // NOI18N
         btn0.setForeground(new java.awt.Color(255, 255, 255));
         btn0.setText("0");
         btn0.setBorder(null);
@@ -313,23 +333,29 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         String txt = txtInputMatricula.getText();
         
-        
+           
         
         try{
             int mat = Integer.parseInt(txt);
-            boolean validar = ValidarMatricula.validar(mat);
+            setMatricula(mat);
+            boolean validar = Validaciones.validarMatricula(mat);
             
             if (validar) {
-                BtnsHome.btnEntrar();
+                MenuStudentsGUI pGUI = new MenuStudentsGUI();
+                pGUI.setVisible(true);
+                pGUI.setLocationRelativeTo(null);
                 dispose();
             }else{
-                JOptionPane.showConfirmDialog(this, "La matrícula no es válida. Inténtalo de nuevo.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showConfirmDialog(this, "La matrícula no es válida. Inténtalo de nuevo.", "Entrada Inválida", JOptionPane.WARNING_MESSAGE);
+                txtInputMatricula.setText(" "); //limpiar el texto
                 txtInputMatricula.requestFocus();
             }
         
         
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(this, "Por favor, Ingrese su matricula", "Entrada Inválida", JOptionPane.WARNING_MESSAGE);
+             txtInputMatricula.setText(" "); //limpiar el texto
+             txtInputMatricula.requestFocus();
         
         } catch (FileNotFoundException | SQLException ex) {
             Logger.getLogger(HomeStudentsGUI.class.getName()).log(Level.SEVERE, null, ex);
@@ -344,7 +370,6 @@ public class HomeStudentsGUI extends javax.swing.JFrame {
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
-        
         
             if (!(txtInputMatricula.getText().length() >= 8)) {
                     

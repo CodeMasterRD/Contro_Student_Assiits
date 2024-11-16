@@ -1,6 +1,8 @@
 
 package Logica;
 
+
+import GUI.DialogoOperacines;
 import GUI.HomeStudentsGUI;
 import GUI.MenuStudentsGUI;
 import Percistencia.DBConexion;
@@ -16,6 +18,11 @@ public class ControStudenAssits {
         HomeStudentsGUI pantallaHome = new HomeStudentsGUI();
         pantallaHome.setVisible(true);
         pantallaHome.setLocationRelativeTo(null);
+//        AsminDarshboard pDarshboard = new AsminDarshboard();
+//        pDarshboard.setVisible(true);
+//        pDarshboard.setLocationRelativeTo(null);
+        
+        
    
 //        DBConexion conexion = new DBConexion();
 //        conexion.getConexion();
